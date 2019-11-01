@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script language= javascript>
+       salariofixo= parseFloat (prompt("qual o valor do seu salario"))
+        valorvendas= parseFloat (prompt("qual o valor total de vendas"))
+        
+        if (valorvendas<1500)
+         {
+          salarioT=salariofixo + valorvendas*3/100
+        }
+        else 
+        {
+            comissao3=1500*3/100
+            comissao5=(valorvendas-1500)*5/100
+            salarioT=salariofixo + comissao3 + comissao5
+        }
+        alert("O salario final é de :" + salarioT)
+       </script>
+    <body></body>
+    </head>
+</html>

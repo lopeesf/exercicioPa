@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script language= javascript pt-br>
+            x=1
+            vdolar=3,99;
+            veuro=4.44;
+            vlibras=5.15;
+            while(x==1) {
+                valorf=0;
+            document.write("LIBRAS=R$ 5,14<br/> DOLARES=R$ 4,44 <br/> ");
+            document.write ("01-REAIS PARA DOLARES <br/>");
+            document.write ("02-DOLARES PARA REAIS <br/>");
+            document.write ("03-REAIS PARA LIBRAS <br/>");
+            document.write ("04-LIBRAS PARA REAIS <br/>");
+            document.write ("05-DOLARES PARA LIBRAS<br/>");
+            document.write ("06-LIBRAS PARA DOLARES <br/>");
+            document.write ("07-...FIM... <br/>");
+            opcao=prompt("qual sua opção");
+            if (opçao !="7"){
+                valor=parseFloat(prompt("qual o valor total da moeda"));
+            }
+            
+           
+                switch (opcao)
+                {
+            case "1":
+            valorf=parseFloat(valor/vdolar);
+            break;
+            case "2":
+            valorf=parseFloat(valor*vdolar);
+            break;
+            case "3":
+            valorf=parseFloat(valor/vlibras);
+            break;
+            case "4":
+            valorf=parseFloat(valor*vdolar);
+            break;
+            case "5":
+            valorf=parseFloat(valor/vlibras);
+            break;
+            case "6":
+            valorf=parseFloat(valor*vlibras);
+            break;
+            case"7":
+            x=2;
+            break;
+            default:
+            document.write ("opao invalida");
+                }
+                document.write("RESULTADO DO CALCULO <br/>");
+                document.write(valorf.tofixed(2));
+                document.write("<br/>");
+            }
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+        }
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               </script>
+    <body></body>
+    </head>
+
+    </html>
